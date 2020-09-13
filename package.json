@@ -6,22 +6,22 @@
   "author": "Anthony Vásquez",
   "license": "ISC",
   "devDependencies": {
-    "concurrently": "3.5.1",
-    "react-scripts": "^1.1.4"
+    "concurrently": "5.3.0",
+    "react-scripts": "^3.4.3"
   },
   "dependencies": {
-    "autoprefixer-stylus": "0.14.0",
-    "firebase": "^4.10.1",
-    "formik": "^1.4.1",
-    "moment": "^2.23.0",
-    "prop-types": "^15.6.0",
-    "re-base": "3.2.2",
-    "react": "^16.3.0-alpha.1",
-    "react-dom": "^16.3.0-alpha.1",
-    "react-router-dom": "^4.2.2",
-    "react-transition-group": "^2.2.1",
-    "serve": "^6.5.8",
-    "stylus": "0.54.5"
+    "autoprefixer-stylus": "1.0.0",
+    "firebase": "^7.20.0",
+    "formik": "^2.1.5",
+    "moment": "^2.27.0",
+    "prop-types": "^15.7.2",
+    "re-base": "4.0.0",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-router-dom": "^5.2.0",
+    "react-transition-group": "^4.4.1",
+    "serve": "^11.3.2",
+    "stylus": "0.54.8"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -30,5 +30,17 @@
     "eject": "react-scripts eject",
     "styles": "stylus -u autoprefixer-stylus ./src/css/style.styl -o ./src/css/style.css",
     "styles:watch": "stylus -u autoprefixer-stylus -w ./src/css/style.styl -o ./src/css/style.css"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }
