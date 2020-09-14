@@ -1,6 +1,8 @@
-import React from 'react';
-import { render } from 'react-dom';
-import Router from './components/Router';
-import './css/style.css';
+import React from "react";
+import { render } from "react-dom";
+import App from "./components/App";
+import Router from "./components/Router";
+import "./css/reset.scss";
+import "./css/style.scss";
 
-render(<Router />, document.querySelector("#main"));
+render(<App />, document.querySelector("#app"));

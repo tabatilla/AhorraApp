@@ -1,0 +1,33 @@
+@mixin xs-devices {
+  @media (max-width: 576px) {
+    @content;
+  }
+}
+
+// Small devices (portrait phones, < 576px )
+@mixin sm-devices {
+  @media (min-width: 576px) {
+    @content;
+  }
+}
+
+// Medium devices (tablets, 768px and up)
+@mixin md-devices {
+  @media (min-width: 768px) {
+    @content;
+  }
+}
+
+// Large devices (desktops, 992px and up)
+@mixin lg-devices {
+  @media (min-width: 992px) {
+    @content;
+  }
+}
+
+// Large devices (desktops, 992px and up)
+@mixin lg-devices {
+  @media (min-width: 1200px) {
+    @content;
+  }
+}

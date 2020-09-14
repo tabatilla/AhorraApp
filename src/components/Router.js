@@ -4,6 +4,7 @@ import base, { firebaseApp } from "../base";
 import { BrowserRouter, Route, Switch, Redirect, Link } from "react-router-dom";
 import Categories from "./Categories";
 import App from "./App";
+import Footer from "./Footer";
 import Reports from "./Reports";
 import Login from "./Login";
 
@@ -117,10 +118,10 @@ class Router extends React.Component {
       );
     } else {
       return (
-        <div>
-          {Router}
+        <div className="wrapper">
+          {/* {Router}
           {logout}
-          <p>Hola: {this.state.user.displayName}</p>
+          <p>Hola: {this.state.user.displayName}</p> */}
           <App uid={this.state.uid} />
         </div>
       );
