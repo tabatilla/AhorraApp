@@ -3,6 +3,9 @@ import moment from "moment";
 import { formatPrice } from "../helpers";
 
 class ExpensesList extends React.Component {
+  calendarIcon = require("./../assets/calendar.svg");
+  caretIcon = require("./../assets/caret.svg");
+
   state = {
     day: moment(),
     showByDay: true,
@@ -127,14 +130,65 @@ class ExpensesList extends React.Component {
     );
 
     return (
-      <div>
-        {cabecera}
+      <div className="content expenses-list">
+        <div className="expenses-list__header">
+          <div className="expenses-list__header--icon">
+            <img className="w-100" src={this.caretIcon}></img>
+          </div>
+          <div className="expenses-list__header--big">14</div>
+          <div className="expenses-list__header--regular">
+            <div>Setiembre</div>
+            <div>Lunes</div>
+          </div>
+          <div className="expenses-list__header--icon expenses-list__header--rotate">
+            <img className="w-100" src={this.caretIcon}></img>
+          </div>
+        </div>
+        <div class="expenses-list__body">
+          <div className="expenses-list__total">
+            <div className="expenses-list__total--title">
+              <div>Total</div>
+              <div>S/. 1204.70</div>
+            </div>
+            <div className="expenses-list__icon">
+              <img className="w-100" src={this.calendarIcon}></img>
+            </div>
+          </div>
+          <div className="expenses-list__list-items">
+            <div className="expenses-list__item">
+              <div className="expenses-list__item--title">Pizza Gian Carlo</div>
+              <div className="expenses-list__item--category">Comida</div>
+              <div className="expenses-list__item--price">S/. 45.90</div>
+            </div>
+            <div className="expenses-list__item">
+              <div className="expenses-list__item--title">Coca Grande</div>
+              <div className="expenses-list__item--category">bebidas</div>
+              <div className="expenses-list__item--price">S/. 11.90</div>
+            </div>
+            <div className="expenses-list__item">
+              <div className="expenses-list__item--title">Skyrim</div>
+              <div className="expenses-list__item--category">Juegos</div>
+              <div className="expenses-list__item--price">S/. 110.90</div>
+            </div>
+            <div className="expenses-list__item">
+              <div className="expenses-list__item--title">Cervezas Pilsen</div>
+              <div className="expenses-list__item--category">Alcohol</div>
+              <div className="expenses-list__item--price">S/. 68.00</div>
+            </div>
+            <div className="expenses-list__item">
+              <div className="expenses-list__item--title">Amex</div>
+              <div className="expenses-list__item--category">Deuda</div>
+              <div className="expenses-list__item--price">S/. 968.00</div>
+            </div>
+          </div>
+        </div>
+        {/* {cabecera}
         <ul>{listItems}</ul>
         <p>
           Total: <span>{total}</span>
         </p>
         Reporte
-        <ul>{listReport}</ul>
+        <ul>{listReport}</ul> */}
       </div>
     );
   }
